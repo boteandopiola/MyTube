@@ -6,7 +6,7 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
 
-    <meta name="theme-color" content="#0f0f0f">
+    <meta name="theme-color" content="#111111">
 
     <link rel="manifest" href="./manifest.json">
 
@@ -19,10 +19,9 @@
 
         html, body {
             margin: 0;
-            padding: 0;
             width: 100%;
-            min-height: 100%;
-            background: #0f0f0f;
+            height: 100%;
+            background: #111;
             color: white;
             font-family: Arial, sans-serif;
         }
@@ -31,12 +30,10 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            min-height: 100vh;
         }
 
         .container {
             text-align: center;
-            padding: 30px;
         }
 
         h1 {
@@ -44,14 +41,13 @@
         }
 
         button {
-            border: 0;
-            border-radius: 12px;
-            padding: 16px 30px;
-            font-size: 18px;
-            font-weight: bold;
             background: #ff0000;
             color: white;
-            cursor: pointer;
+            border: none;
+            border-radius: 10px;
+            padding: 15px 30px;
+            font-size: 18px;
+            font-weight: bold;
         }
 
         button:active {
@@ -66,4 +62,17 @@
 
         <h1>MyTube</h1>
 
-        <button id="
+        <button onclick="abrirYouTube()">
+            Abrir YouTube
+        </button>
+
+    </div>
+
+    <script>
+        function abrirYouTube() {
+            window.location.href = "https://m.youtube.com/";
+        }
+    </script>
+
+</body>
+</html>
