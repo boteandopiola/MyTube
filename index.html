@@ -37,21 +37,12 @@
         }
 
         h1 {
-            margin-bottom: 30px;
+            margin-bottom: 15px;
         }
 
-        button {
-            background: #ff0000;
-            color: white;
-            border: none;
-            border-radius: 10px;
-            padding: 15px 30px;
+        p {
+            color: #aaa;
             font-size: 18px;
-            font-weight: bold;
-        }
-
-        button:active {
-            transform: scale(0.97);
         }
     </style>
 </head>
@@ -59,19 +50,14 @@
 <body>
 
     <div class="container">
-
         <h1>MyTube</h1>
-
-        <button onclick="abrirYouTube()">
-            Abrir YouTube
-        </button>
-
+        <p>Abriendo YouTube...</p>
     </div>
 
     <script>
-        function abrirYouTube() {
+        setTimeout(function () {
             window.location.href = "https://m.youtube.com/";
-        }
+        }, 5000);
     </script>
 
 </body>
